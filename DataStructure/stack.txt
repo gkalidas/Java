@@ -1,0 +1,23 @@
+stack -> ADT -> when we talk about abstract data type, we only talk
+about the features provided by the data type and not the implementation
+
+stack features are
+Last in first out
+
+push - to add the data at the end of the stack
+pop - to remove element from the top
+peek - find first element
+
+book - last book
+app - bug - lunch
+application in windows/linux/android
+
+can go with 
+array(static) and linkedList(dyanamic)
+
+top - will store last element
+overflow error -> full stack
+underflow error -> empty stack
+
+Stack - util
+

@@ -5,11 +5,14 @@ public class Runner {
 
 		Stack num = new Stack();
 		
+		//isEmpty will be true as nothing is added yet
+		System.out.println(num.isEmpty());
 		num.push(3);
 		num.push(2);
 		System.out.print(num.peek()+" This is peek\n");
 		num.push(4);
-		
+		//will be false as stack is not empty
+		System.out.println(num.isEmpty());
 		System.out.print(num.pop()+" This is pop\n");
 		
 		
