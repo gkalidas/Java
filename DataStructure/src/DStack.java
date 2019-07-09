@@ -39,9 +39,22 @@ public class DStack {
 			top--;
 			data = stack[top];
 			stack[top]=0;
+			shrink();
 		}
 		return data;
 	}
+	private void shrink() {
+		// TODO Auto-generated method stub
+		int length = size();
+		//capacity/2/2 will give the 1/4 of the current capacity
+		if(length<(capacity/2/2)) {
+			capacity /=2;
+		}
+		int newStack[] = new int[capacity/2];
+		System.arraycopy(stack,0,newStack, 0, length);
+		stack = newStack;
+	}
+
 	//peek is similar to pop somehow
 	public int peek() {
 		int data;//we just don't decrement the top
@@ -59,7 +72,8 @@ public class DStack {
 	}
 	public void display() {
 		for(int n: stack) {
-			System.out.println(n);
+			System.out.print(" "+n);
 		}
+		System.out.println();
 	}
 }
