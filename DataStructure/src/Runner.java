@@ -5,17 +5,24 @@ public class Runner {
 
 		Queue q = new Queue();
 		//adding elements in the Queue
+		
+		//checking for full-STACK
+		System.out.print(q.isFull());
+		System.out.print(q.isEmpty());
+		
+		q.dequeue();
+		
 		q.enQueue(23);
 		q.enQueue(44);
-		q.enQueue(32);
-		q.show();
-		q.dequeue();
+		q.enQueue(45);
+		q.enQueue(44);
+		q.enQueue(45);
+		q.enQueue(44);
+		q.enQueue(45);
+		
+		System.out.print("\nSize : " + q.getSize()+"\n");
 		q.show();
 		
-		q.enQueue(55);
-		q.enQueue(45);
-		q.enQueue(33);
-		q.show();
 		
 //		//******STACK using Dynamic array*****//
 //		DStack num = new DStack();
