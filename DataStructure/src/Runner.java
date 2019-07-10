@@ -3,19 +3,26 @@ public class Runner {
 
 	public static void main(String[] args) {
 
-		//******STACK using LinkedList*****//
-		DStack num = new DStack();
-		num.push(23);
-		num.push(23);
-		num.push(23);
-		num.push(23);
-		num.push(23);
-		num.display();
-		num.pop();
-		num.display();
+		Queue q = new Queue();
+		//adding elements in the Queue
+		q.enQueue(23);
+		q.enQueue(44);
+		q.enQueue(32);
+		q.show();
+		
+//		//******STACK using Dynamic array*****//
+//		DStack num = new DStack();
+//		num.push(23);
+//		num.push(23);
+//		num.push(23);
+//		num.push(23);
+//		num.push(23);
+//		num.display();
+//		num.pop();
+//		num.display();
 		
 		
-		//*****STACK using array******//
+		//*****STACK using static array******//
 		
 //		Stack num = new Stack();
 //		//isEmpty will be true as nothing is added yet
