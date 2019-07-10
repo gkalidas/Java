@@ -9,6 +9,13 @@ public class Runner {
 		q.enQueue(44);
 		q.enQueue(32);
 		q.show();
+		q.dequeue();
+		q.show();
+		
+		q.enQueue(55);
+		q.enQueue(45);
+		q.enQueue(33);
+		q.show();
 		
 //		//******STACK using Dynamic array*****//
 //		DStack num = new DStack();
